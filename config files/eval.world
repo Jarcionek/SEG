@@ -1,0 +1,108 @@
+# insert the code of the .inc files here
+include "map.inc"
+include "bot2.inc"
+include "obstacle.inc"
+include "living.inc"
+include "dead.inc"
+include "fire.inc"
+
+# definition of the window
+window 
+(
+  
+   # size in pixels
+   size [200 200]
+   
+   # meters per pixel
+   scale 40
+)
+
+# instantiate a flooplan
+floorplan 
+(
+   bitmap "building.png"
+   size [20 27.5 3]
+)
+
+bot
+(
+   name "bob0"
+   pose [-8 0 0 0]
+   color "blue"
+)
+
+obstacle 
+(
+   name "obstacle0"
+   pose [-7 4 0 90]
+   color "brown"
+)
+
+obstacle 
+(
+   name "obstacle1"
+   pose [-7 -9 0 90]
+   color "black"
+)
+
+obstacle 
+(
+   name "obstacle2"
+   pose [6 -7 0 0]
+   color "brown"
+)
+
+living
+(
+   name "living0"
+   pose [-7 -5 0 45]
+   color "yellow"
+)
+
+living
+(
+   name "living1"
+   pose [6 -11 0 30]
+   color "brown"
+)
+
+living
+(
+   name "living2"
+   pose [6 -8 0 0]
+   color "pink"
+)
+
+
+dead
+(
+   name "dead0"
+   pose [7 8 0 0]
+   color "pink"
+)
+
+dead
+(
+   name "dead1"
+   pose [0 4 0 180]
+   color "brown"
+)
+
+fire
+(
+   name "fire0"
+   pose [8 3 0 45]
+)
+
+fire
+(
+   name "fire1"
+   pose [0 7 0 0]
+)
+
+fire
+(
+   name "fire2"
+   pose [8 0 0 30]
+)
+
